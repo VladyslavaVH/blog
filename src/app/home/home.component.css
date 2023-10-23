@@ -1,0 +1,21 @@
+#btn {
+    width: 70px;
+    height: 70px;
+    font-size: xx-large;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0px 0px 5px 2px lightgray; /* Параметры тени */
+    color: grey;
+    position: fixed;
+    right: 5%;
+    top: 50%;
+    font-size: 7vh
+}
+
+#btn:hover {
+    transition: 1.2s;
+    box-shadow: 0px 0px 6px 4px lightgray;
+    cursor: pointer;
+    font-size: 9vh;
+}

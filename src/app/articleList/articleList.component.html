@@ -1,0 +1,16 @@
+<div class="articleDiv" *ngFor="let article of articleList">
+    <ul id="tags">
+        <li class="orange" *ngFor="let tag of article.tags" (click)="goToSearch(tag.name)">
+            #{{tag.name | uppercase}}
+        </li>
+    </ul>
+    <!-- <p class="orange" id="theme">{{article.theme | uppercase}}</p> -->
+    <h3 class="name">{{article.name}}</h3>
+    <ul class="info">
+        <li>{{article.date | date: 'mediumDate'}}</li>
+        <li>{{article.author?.nickName}}</li>
+    </ul>
+    <img [src]="article.imgUrl" class="img"> 
+    <p class="text">{{article.text | slice:0:350}}...</p>
+    <button type="button" class="orange" id="btn" (click)="goToArtile(article.id)">Continue Reading→</button>
+</div>

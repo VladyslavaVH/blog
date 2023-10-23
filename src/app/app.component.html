@@ -1,0 +1,45 @@
+<header>
+    <nav>
+        <ul>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a routerLink="">HOME</a></li>
+            <li routerLinkActive="active"><a routerLink="theme/lifestyle">LIFE STYLE</a></li>
+            <li routerLinkActive="active"><a routerLink="theme/nature">NATURE</a></li>
+            <li routerLinkActive="active"><a routerLink="theme/scienceNTechnologies">SCIENCE AND TECHNOLOGY</a></li>
+            <li routerLinkActive="active"><a routerLink="theme/sport">SPORT</a></li>
+        </ul>
+    </nav>
+    <div id="searchDiv">
+        <input list="articleList" type="search" placeholder="Search for an article..." [(ngModel)]="searchText">
+        <button type="button" (click)="goSearchComponent()"></button>
+    </div>
+    
+</header>
+
+<div id="centerDiv">
+    <h1 align="center">MY BLOG</h1>
+    <p>Here you will find a lot of interesting things</p>
+</div>
+
+<router-outlet></router-outlet>
+
+<footer>
+    <p>
+        © 2021 VVG
+    </p>
+    <nav>
+        <ul>
+            <li><a href="https://www.instagram.com/">
+                <img src="../assets/instagram-icon.png">
+            </a></li>
+            <li><a href="https://uk-ua.facebook.com/">
+                <img src="../assets/facebook-icon.png">
+            </a></li>
+            <li><a href="https://www.pinterest.com/">
+                <img src="../assets/pinterest-icon.png">
+            </a></li>
+            <li><a href="https://twitter.com/?lang=ru">
+                <img src="../assets/twitter-icon.png">
+            </a></li>
+        </ul>
+    </nav>
+</footer>

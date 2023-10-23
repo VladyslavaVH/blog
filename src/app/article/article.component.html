@@ -1,0 +1,22 @@
+<div id="articleDiv">
+    <div>
+        <img [src]="article?.imgUrl" class="img"> 
+        <!-- <p class="orange" id="theme">{{article?.theme | uppercase}}</p> -->
+        <div align="center">
+            <p>{{article?.date | date: 'mediumDate'}}</p>
+            <h2 class="name">{{article?.name}}</h2>
+            <p>{{article?.author?.nickName}}</p>
+        </div>
+        <p id="text">{{article?.text}}</p>
+        <ul>
+            <li class="orange" *ngFor="let tag of article?.tags" (click)="goToSearch(tag.name)">
+                #{{tag?.name | uppercase}}
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="btns">
+    <button type="button" id="deleteBtn" (click)="deleteArticle(article?.id)">Delete</button>
+    <button type="button" id="updateBtn" (click)="updateArticle(article?.id)">Update</button>
+</div>
+

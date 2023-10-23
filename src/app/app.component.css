@@ -1,0 +1,103 @@
+header {
+    background: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#searchDiv {
+    width: max-content;
+    height: min-content;
+    margin: auto 1%;
+}
+
+#searchDiv input {
+    height: 20px;
+    margin-right: 5px;
+}
+
+#searchDiv button {
+    width: 18px;
+    height: 18px;
+    background-image: url("../assets/loupe.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    margin: auto 0;
+}
+
+ul {
+    list-style: none; 
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    width: max-content;
+    justify-content: flex-start;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    width: max-content;
+    white-space: nowrap;
+}
+
+li {    
+    padding: 2%;
+}
+
+li:hover {
+    background: rgb(83, 83, 83);
+    cursor: pointer;
+}
+
+.active {
+    background: rgb(83, 83, 83);
+}
+
+#centerDiv {
+    width: max-content;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+}
+
+#centerDiv h1 {
+    margin-bottom: 0%;
+}
+
+#centerDiv p {
+    margin-top: 0.5%;
+    margin-bottom: 7%;
+    font-family: 'SEGOE PRINT';
+}
+
+footer {
+    background: black;
+    position: sticky;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav ul li {
+    padding: 10px;
+}
+
+footer nav ul li img {
+    width: 25px;
+    height: 25px;
+}
+
+footer p {
+    display: block;
+    width: max-content;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: x-small;
+    margin: auto 1%;
+}

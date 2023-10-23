@@ -1,0 +1,87 @@
+.articleDiv {
+    width: 62vw;
+    height: auto;
+    margin: 1.5% auto;
+    box-shadow: 0px 0px 5px 2px lightgray; /* Параметры тени */
+    padding: 15px;
+
+    display: grid;
+    grid-template-columns: 30vw 30vw;
+    grid-column-gap: 15px;
+    grid-auto-rows: max-content;
+}
+
+.articleDiv:hover {
+    width: 63vw;
+    transition: 1.2s;
+    box-shadow: 0px 0px 6px 4px lightgray;
+    cursor: pointer;
+}
+
+img {
+    width: 30vw;
+    height: auto;
+    grid-column: 1;
+    grid-row: 1 / 5;
+}
+
+#tags {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0%;
+}
+
+.name {
+    margin: 0%;
+    font-size: x-large;
+    color: black;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+ul {
+    color: gray;
+    font-size: small;
+    font-family: Calibri;
+    list-style: none;
+    display: flex;
+    grid-column: 2;
+    grid-row: 3;
+    padding: 0%;
+    margin: 0%;
+}
+
+ul li {
+    margin-right: 15px;
+}
+
+.text {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+#btn {
+    grid-column: 2;
+    grid-row: 5;
+    padding: 0%;
+}
+
+.orange {
+    color: #f3bc56;
+    font-size: medium;
+    background: none;
+    border: none;
+    font-family: 'Times New Roman';
+    width: max-content;
+}
+
+.orange:hover {
+    color: #d6a64d;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+p {
+    white-space: pre-wrap;
+    margin: 0;
+}

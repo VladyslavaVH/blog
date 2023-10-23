@@ -1,0 +1,15 @@
+<form (ngSubmit)="onSubmit()" novalidate>
+    <h1 align="center">Create an article</h1>
+    <input type="text" name="name" #name placeholder="Name" required><br>
+    <input type="text" name="author" #nickName placeholder="Nickname" required><br>
+    <select name="theme" required aria-placeholder="Select a theme" #theme>
+        <option>lifestyle</option>
+        <option>nature</option>
+        <option>scienceNTechnologies</option>
+        <option>sport</option>
+    </select><br>
+    <input type="text" name="imgUrl" placeholder="Image url" #imgUrl><br>
+    <input type="text" name="tags" placeholder="Tags" #tags><br>
+    <textarea name="text" required placeholder="Text" #text></textarea><br>
+    <button type="submit">Create</button>
+</form>

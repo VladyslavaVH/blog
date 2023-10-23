@@ -1,0 +1,21 @@
+<form (ngSubmit)="onSubmit()" novalidate>
+    <h1 align="center">Update an article</h1>
+    <input type="text" name="name" #name required [value]="article?.name"><br>
+    <select name="theme" required  #theme>
+        <option>lifestyle</option>
+        <option>nature</option>
+        <option>scienceNTechnologies</option>
+        <option>sport</option>
+    </select><br>
+    <input type="text" name="imgUrl" [value]="article?.imgUrl"  #imgUrl>
+    <p>Tags:</p>
+    <!-- <select [(ngModel)]="selectedTag"> -->
+    <select>
+        <!-- <option *ngFor="let t of article?.tags" [value]="t?.name">{{t?.name}}</option> -->
+        <option *ngFor="let t of article?.tags">{{t?.name}}</option>
+    </select>
+    <br>
+    <!-- <input type="text" name="tag" [value]="selectedTag"  #imgUrl><br> -->
+    <textarea name="text" required [value]="article?.text" #text></textarea><br>
+    <button type="submit">Update</button>
+</form>
