@@ -9,7 +9,7 @@ import { Article } from "../entities/article.entities";
         providedIn: 'root'
 })
 export class ArticleService {
-    private BASE_URI: string = 'https://localhost:44382/api/blog/';
+    private BASE_URI: string = 'https://api-for-angular-blog.onrender.com/api/blog';
     public imgUrl: string | ArrayBuffer | null | undefined;
 
     constructor(private http: HttpClient){}
